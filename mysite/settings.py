@@ -28,9 +28,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-8c*(-)-@(&j5uk#kq(ljt
 DEBUG = os.environ.get('DEBUG', 'False').lower() in {'1', 'true', 'yes', 'on'}
 
 ALLOWED_HOSTS = [
-    host.strip()
-    for host in os.environ.get('ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',')
-    if host.strip()
+    'django-blogposts-r1.onrender.com',
+    'localhost',
+    '127.0.0.1'
 ]
 
 

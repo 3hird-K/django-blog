@@ -1,0 +1,118 @@
+{% extends "rest_framework/base.html" %}
+
+{% block title %}Blog API{% endblock %}
+
+{% block branding %}
+  <a class="navbar-brand" href="{% url 'home' %}">Blog Posts</a>
+{% endblock %}
+
+{% block bootstrap_navbar_variant %}navbar-default{% endblock %}
+
+{% block style %}
+  {{ block.super }}
+  <style>
+    body {
+      background: #f5f6f8;
+    }
+
+    .navbar {
+      margin-bottom: 24px;
+      border: 0;
+      border-radius: 0;
+      background: #ffffff;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .navbar-default {
+      background-color: #ffffff;
+      border-color: rgba(0, 0, 0, 0.06);
+    }
+
+    .navbar-default .navbar-brand,
+    .navbar-default .navbar-nav > li > a {
+      color: #2b2f36;
+      text-shadow: none;
+    }
+
+    .navbar-default .navbar-brand:hover,
+    .navbar-default .navbar-brand:focus,
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus {
+      color: #ff7a18;
+      background: transparent;
+    }
+
+    .navbar-default .navbar-toggle {
+      border-color: rgba(0, 0, 0, 0.14);
+    }
+
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: #5b616b;
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .container {
+      max-width: 1180px;
+    }
+
+    .page-header {
+      margin: 0 0 18px;
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .well,
+    .form-control,
+    pre,
+    .table,
+    .panel,
+    .list-group-item {
+      border-radius: 12px;
+    }
+
+    .well,
+    .panel,
+    .table,
+    pre {
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.04);
+    }
+
+    .well,
+    pre,
+    .panel {
+      border: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .btn {
+      border-radius: 999px;
+      padding-left: 14px;
+      padding-right: 14px;
+      font-weight: 600;
+    }
+
+    .btn-primary {
+      background: #ff7a18;
+      border-color: #ff7a18;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus {
+      background: #f06b0f;
+      border-color: #f06b0f;
+    }
+
+    .label {
+      border-radius: 999px;
+      padding: 0.35em 0.75em;
+      font-weight: 600;
+    }
+
+    .container > .content {
+      padding-bottom: 24px;
+    }
+  </style>
+{% endblock %}
